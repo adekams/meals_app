@@ -31,11 +31,11 @@ class MealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget content = ListView.builder(
       itemCount: meals.length,
-      itemBuilder: (ctx, indx) {
+      itemBuilder: (ctx, index) {
         return MealItem(
-          meal: meals[indx],
+          meal: meals[index],
           onSelectMeal: () {
-            _selectedMeal(context, meals[indx]);
+            _selectedMeal(context, meals[index]);
           },
         );
       },
